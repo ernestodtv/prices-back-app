@@ -29,7 +29,7 @@ public class Price {
     private Long id;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "BRANDS_ID")
+    @JoinColumn(name = "BRAND_ID")
     private Brand brand;
 
     private LocalDateTime startDate;
@@ -37,11 +37,11 @@ public class Price {
     private LocalDateTime endDate;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "TARIFFS_ID")
+    @JoinColumn(name = "TARIFF_ID")
     private Tariff tariff;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "PRODUCTS_ID")
+    @JoinColumn(name = "PRODUCT_ID")
     private Product product;
 
     private Integer priority;
